@@ -1,0 +1,35 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --color-white:#FFF;
+  --color-light:#F5F5F8;
+  --color-border:#E5E5E8;
+  --color-primary:#409EFF;
+  --color-primary-light:#a0cfff;
+  --color-primary-light-2:#337ecc;
+  --color-medium:#888;
+  --color-gray:#CCC;
+
+ --color-error-light:#fef0f0;
+ --color-error:#f56c6c;
+}
+
+:root.dark{
+  --color-white:#FFF;
+  --color-light:#F5F5F8;
+  --color-border:#E5E5E8;
+  --color-primary:#409EFF;
+  --color-primary-light:#a0cfff;
+  --color-primary-light-2:#337ecc;
+  --color-medium:#888;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+html,body{
+  height: 100%;
+}
+body {
+  background-color: #222222;
+}
