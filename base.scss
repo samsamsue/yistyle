@@ -1,0 +1,347 @@
+:root{
+    --bg:#FFF;
+    --text-w:#FFF;
+    --text:#333;
+    --primary:#0d6efd;
+    --secondary:#e9ecef;
+    --success:#67c23a;
+    --danger:#dc3545;
+
+    --shadow:0 0 2rem rgba(0,0,0,0.05);
+
+    
+    --size-small:0.75rem;
+    --size-default:1rem;
+    --size-large:1.25rem;
+
+
+    --button-border-radius:4px;
+
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+ul,ol,dl{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.ui-button{
+    padding:calc(var(--button-size,var(--size-default)) * 0.5) calc(var(--button-size,var(--size-default)) * 1.2);
+    line-height:1;
+    font:inherit;
+    font-size:var(--button-size,var(--size-default));
+    border:none;
+    -webkit-appearance:none;
+    white-space:nowrap;
+    border-radius:var(--button-border-radius);
+    outline:none;
+    background-color: var(--button-background, var(--secondary));
+    color: var(--button-color, --text);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap:0.5rem;
+    &.type-primary{
+        --button-background: var(--primary);
+        --button-color: var(--text-w);
+    }
+    &.type-success{
+        --button-background: var(--success);
+        --button-color: var(--text-w);
+    }
+    &.type-danger{
+        --button-background: var(--danger);
+        --button-color: var(--text-w);
+    }
+    &.loading::before{
+        content:'';
+        display: inline-block;
+        width:calc(1 * var(--button-size,var(--size-default)));
+        height:calc(1 * var(--button-size,var(--size-default)));
+        border-radius:50%;
+        border:1.5px solid #FFF;
+        border-left-color: transparent;
+        flex-shrink: 0;
+        animation: loading 0.8s infinite linear;
+    }
+
+    &.size-large{--button-size:var(--size-large)}
+    &.size-default{--button-size:var(--size-default)}
+    &.size-small{--button-size:var(--size-small)}
+
+    &::after{
+        content:'';
+        display: block;
+        background-color: rgba(255,255,255,0.2);
+        position: absolute;
+        inset:0;
+        border-radius: inherit;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    &:hover::after{
+        visibility: visible;
+        opacity: 1;
+    }
+    &:active::after{
+        transition: none;
+        background-color: rgba(0,0,0,0.1);
+    }
+}
+
+
+
+@mixin all($pre:'',$suffix:''){
+    @each $name,$attr in (
+        bf:backdrop-filter,//背景滤镜
+        c:color,//前景色
+        r:border-radius,//圆角
+        f:font,//字体
+        fs:font-size,//字体大小
+        fw:font-weight,//字体粗细
+        ta:text-align,//文字方向
+        b:background,//背景
+        bp:background-position,//背景位置
+        bs:background-size,//背景大小
+        bc:background-color,//背景颜色
+        flex:flex,//flex
+        d:display,//显示方式
+        g:gap,//间距
+        rg:row-gap,//行间距
+        cg:column-gap,//列间距
+        bd:border,//边框
+        p:padding,//内边距
+        px:(padding-left,padding-right),//横向内边距
+        py:(padding-top,padding-top),//纵向内边距
+        pl:padding-left,//左内边距
+        pr:padding-right,//右内边距
+        pt:padding-top,//上内边距
+        pb:padding-bottom,//下内边距
+        m:margin,//外边距
+        mx:(margin-left,margin-right),//横向外边距
+        my:(margin-top,margin-top),//纵向外边距
+        ml:margin-left,//左外边距
+        mr:margin-right,//右外边距
+        mt:margin-top,//上外边距
+        mb:margin-bottom,//下外边距
+        lh:line-height,//行高
+        ps:position,//定位方式
+        ar:aspect-ratio,//比例
+        in:inset,//上左、上右、下右、下左位置
+        w:width,//宽度
+        h:height,//高度
+        aj:(align-items,justify-content),//横纵向居中
+        ja:(align-items,justify-content),//横纵向居中
+        ai:align-items,
+        jc:justify-content,
+        lines:(display:-webkit-box,-webkit-box-orient:vertical,line-clamp:var(--#{$pre}lines),-webkit-line-clamp:var(--#{$pre}lines),overflow: hidden),//只显示行数
+        cols:(display:grid,grid-template-columns: repeat(var(--#{$pre}cols),1fr)),//列数
+        sd:box-shadow,//阴影
+        ts:transition,//过渡效果
+        tf:transform,//变换
+        fd:flex-direction,//flex方向
+        a:animation,//动画效果
+        of:object-fit,//适应方式
+        v:visibility,//可见设置
+        sa:align-self,
+        sj:justify-self,
+        filter:filter,//滤镜
+        pi:place-items,//align-items 和 justify-items的简写
+        pc:place-content,//align-content 和 justify-content的简写
+        vg:(display:flex,flex-direction:row, gap:var(--#{$pre}vg),flex-wrap:wrap),//列间距
+        hg:(display:flex,flex-direction:column, gap:var(--#{$pre}hg)),//行间距
+        gtc:grid-template-columns,//属性规定网格布局中的列数（和宽度）
+        gtr:grid-template-rows,//属性规定网格布局中的行数（和高度）
+        td:text-decoration,//属性规定添加到文本的修饰，下划线、上划线、删除线等
+        op:opacity, //透明度
+        pa:(position:absolute,inset:var(--#{$pre}pa)),//absolute的inset
+        pf:(position:fixed,inset:var(--#{$pre}pf)),//fixed的inset
+        tb:(background:var(--#{$pre}tb),-webkit-background-clip: text,-webkit-text-fill-color: transparent,background-size:cover),//文字背景
+        tss:-webkit-text-stroke,//文字描边大小
+        tsb:(-webkit-text-stroke:var(--#{$pre}tss,2px) transparent,background:var(--#{$pre}tsb),-webkit-background-clip: text),//文字描边背景
+        button:(
+           
+        ),
+    ){
+        [style*='--#{$pre}#{$name}:']#{$suffix}{
+            @each $n,$a in $attr{
+                @if type-of($attr) == 'map'{
+                    #{$n}:$a;
+                } @else {
+                    #{$n}:var(--#{$pre}#{$name});
+                }
+            }
+        }
+    }
+
+
+}
+
+@include all('');
+@include all('hover-',':hover');
+@include all('hover-target-',':hover .target');
+@include all('focus');
+@include all('for-','>*');
+@include all('for-hover-','>*:hover');
+@include all('active-',':active');
+@include all('for-active-','>*:active');
+@include all('target-',' .target');
+@include all('for-hover-target-','>*:hover .target');
+
+@each $c,$w in (
+    16:1600,14:1440,12:1280,10:1024,8:800,6:600
+){
+    @media(max-width:#{$w}px){
+        @include all('#{$c}-');
+        @include all('#{$c}-for-','>*');
+
+        html{
+            @if $w == 1440 {
+                font-size:14px;
+            }
+            @if $w == 1280 {
+                font-size:12px;
+            }
+        }
+
+    }
+    
+}
+
+
+/* 动画库 */
+@keyframes loadingZoomA{50%{transform:scale(4);}} 
+@keyframes loadingZoomB{50%{transform:scale(2.5);}}
+@keyframes loadingRotating{100%{transform:rotate(360deg);}}
+@keyframes loading{
+    100%{transform: rotate(360deg);}
+}
+@keyframes wobbleTop {
+    16.65% {-webkit-transform: skew(-12deg);transform: skew(-12deg);}
+    33.3% {-webkit-transform: skew(10deg);transform: skew(10deg);}
+    49.95% {-webkit-transform: skew(-6deg);transform: skew(-6deg);}
+    66.6% {-webkit-transform: skew(4deg);transform: skew(4deg);}
+    83.25% {-webkit-transform: skew(-2deg);transform: skew(-2deg);}
+    100% {-webkit-transform: skew(0);transform: skew(0);}
+}
+@keyframes bob {
+    0% {-webkit-transform: translateY(-8px);transform: translateY(-8px);}
+    50% {-webkit-transform: translateY(-4px);transform: translateY(-4px);}
+    100% {-webkit-transform: translateY(-8px);transform: translateY(-8px);}
+}
+@keyframes pulse{
+    0% {-webkit-transform: scale(1);transform: scale(1);}
+    50% {-webkit-transform: scale(0.9);transform: scale(0.9);}
+    100%{-webkit-transform: scale(1);transform: scale(1);}
+}
+@keyframes pop {
+    50% {-webkit-transform: scale(1.2);transform: scale(1.2);}
+}
+
+@keyframes push {
+    50% {-webkit-transform: scale(0.8);transform: scale(0.8);}
+    100% {-webkit-transform: scale(1);transform: scale(1);}
+}
+
+@keyframes fadeZoomIn {
+     0%{opacity: 0;transform: scale3d(3,3,1);}
+     100%{opacity: 1; }
+ }
+
+@keyframes fadeZoomOut {
+    0%{opacity: 1;}
+    100%{opacity: 0;transform: scale3d(3,3,1); }
+}
+
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    100%{opacity: 1; }
+}
+
+@keyframes fadeOut {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+
+@keyframes zoomIn {
+    from {opacity: 0;-webkit-transform: scale3d(0.3, 0.3, 0.3);transform: scale3d(0.3, 0.3, 0.3);}
+    50% {opacity: 1;}
+}
+
+@keyframes zoomOut {
+    from {opacity: 1;}
+    50% {opacity: 0;-webkit-transform: scale3d(0.3, 0.3, 0.3);transform: scale3d(0.3, 0.3, 0.3);}
+    to {opacity: 0;}
+}
+@keyframes zoom{
+    100%{transform: scale(3);}
+}
+@keyframes slideInUp {
+    from {-webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0);visibility: visible;}
+    to {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+}
+
+@keyframes slideInDown {
+    from {-webkit-transform: translate3d(0, -100%, 0);transform: translate3d(0, -100%, 0);visibility: visible;}
+    to {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+}
+@keyframes slideOutUp {
+    from {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+    to {-webkit-transform: translate3d(0, -100%, 0);transform: translate3d(0, -100%, 0);}
+}
+@keyframes slideOutDown {
+    from {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+    to {-webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0);}
+}
+
+@keyframes bounceIn {
+    from,20%,40%,60%,80%,
+    to {-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);}
+    0% {opacity: 0;-webkit-transform: scale3d(0.3, 0.3, 0.3);transform: scale3d(0.3, 0.3, 0.3);}
+    20% {-webkit-transform: scale3d(1.1, 1.1, 1.1);transform: scale3d(1.1, 1.1, 1.1);}
+    40% {-webkit-transform: scale3d(0.9, 0.9, 0.9);transform: scale3d(0.9, 0.9, 0.9);}
+    60% {opacity: 1;-webkit-transform: scale3d(1.03, 1.03, 1.03);transform: scale3d(1.03, 1.03, 1.03);}
+    80% {-webkit-transform: scale3d(0.97, 0.97, 0.97);transform: scale3d(0.97, 0.97, 0.97);}
+    to {opacity: 1;-webkit-transform: scale3d(1, 1, 1);transform: scale3d(1, 1, 1);}
+}
+
+@keyframes rotateIn {
+    from {-webkit-transform-origin: center;transform-origin: center;-webkit-transform: rotate3d(0, 0, 1, -200deg);transform: rotate3d(0, 0, 1, -200deg);opacity: 0;}
+    to {-webkit-transform-origin: center;transform-origin: center;-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);opacity: 1;}
+}
+@keyframes rotateOut {
+    from {-webkit-transform-origin: center;transform-origin: center;opacity: 1;}
+    to {-webkit-transform-origin: center;transform-origin: center;-webkit-transform: rotate3d(0, 0, 1, 200deg);transform: rotate3d(0, 0, 1, 200deg);opacity: 0;}
+}
+
+
+
+
+@supports not (aspect-ratio:1) {
+    /* 如果浏览器支持，则以下代码可以运行 */
+    body::before {
+        content:'你的浏览器版本太旧，本站将不能正常显示';
+        display: block;
+        color: #FFF;
+        background-color: #F00;
+        font-size:16px;
+        padding:1rem;
+        text-align: center;
+        position: sticky;
+        top:0;
+        z-index: 2147483647;
+    }
+}
+@supports not (position:sticky) {
+    body::before {
+        position: fixed;
+        width:100%;
+        box-sizing: border-box;
+        left:0;
+        top:0;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+    body{
+        padding:0;
+        margin:0;
+    }
+    a{
+        text-decoration: none;
+        color:inherit;
+    }
+    .logo{
+        flex-shrink: 0;
+    }
+    .in{
+        width:min(1600px,calc(100% - 12rem));
+        margin:auto;
+    }
+    </style>
+</head>
+<body>
+    
+    <div style="--p:3rem;">
+        <button class="ui-button size-large">Large</button>
+        <button class="ui-button size-default type-success loading">Default</button>
+        <button class="ui-button size-small type-primary loading">Small</button>
+        <button class="ui-button loading" style="--button-size:1.5rem;--button-background:pink;--button-color:red;">Custom</button>
+        <a href="" class="ui-button loading">Link's Button</a>
+    </div>
+
+    <style>
+        .test{
+            box-shadow: 0 0 0 5px #F00,10px 0 0 5px rgb(0, 255, 149),20px 0 0 5px rgb(3, 23, 245),30px 0 0 5px rgb(0, 255, 115);
+            width:0;
+            aspect-ratio: 1;
+            margin:2rem;
+            background-color: #00F;
+        }
+        </style>
+    
+        <div style="--p:2rem;">
+            <div class="test"></div>
+        </div>
+
+    <header style="--p:1rem;--sd:var(--shadow);--ps:sticky;top:0;z-index: 9;--b:var(--bg);">
+        <div class="in" style="--vg:2rem;--ai:center;">
+            <img class="logo" src="https://jdtek.hk/static/images/logo.svg" alt="">
+            <div style="--ml:auto;--sj:center;">
+                <ul style="--vg:4rem;">
+                    <li><a href="">首页</a></li>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">企业动态</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section style="--py:4rem;">
+        <div class="in">
+            <ul style="--cols:3;--for-r:1rem;--for-pd:2rem;--for-b:#EEE;--g:2rem;--for-h:20rem;--for-ts:0.3s;--for-hover-sd:0 1rem 2rem rgba(0,0,0,0.2);--for-active-sd: 0 0;--for-active-ts:none;">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+
+    
+    <section style="--py:4rem;">
+        <div class="in">
+            <h2>法国公司注册优势</h2>
+            <ul style="--cols:6;--for-pd:2rem;--for-b:#EEE;--g:2rem;--for-h:20rem;--for-ts:0.3s;--for-hover-sd:0 1rem 2rem rgba(0,0,0,0.2);--for-active-sd: 0 0;--for-active-ts:none;">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        
+
+        <div style="--fs:3rem;--fw:bold;--ta:center; background-size: 500%; ">
+            <span style="--tb:linear-gradient(to right,#a4a4a4,rgb(73, 73, 73)); color:#000;  ">文字背景测试</span>
+            <span style="--tsb:#00F;--tss:10px;--c:#FFF;--p:6px;  ">文字描边测试</span>
+        </div>
+
+    </section>
+
+
+    
+
+
+    <div style="--h:800px;"></div>
+
+</body>
+</html>
