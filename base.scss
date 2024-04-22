@@ -14,8 +14,7 @@
     --size-default:1rem;
     --size-large:1.25rem;
 
-
-    --button-border-radius:4px;
+    --button-border-radius:6px;
 
 }
 *, ::after, ::before {
@@ -115,7 +114,7 @@ ul,ol,dl{
         bd:border,//边框
         p:padding,//内边距
         px:(padding-left,padding-right),//横向内边距
-        py:(padding-top,padding-top),//纵向内边距
+        py:(padding-top,padding-bottom),//纵向内边距
         pl:padding-left,//左内边距
         pr:padding-right,//右内边距
         pt:padding-top,//上内边距
@@ -140,9 +139,10 @@ ul,ol,dl{
         lines:(display:-webkit-box,-webkit-box-orient:vertical,line-clamp:var(--#{$pre}lines),-webkit-line-clamp:var(--#{$pre}lines),overflow: hidden),//只显示行数
         cols:(display:grid,grid-template-columns: repeat(var(--#{$pre}cols),1fr)),//列数
         sd:box-shadow,//阴影
+        tsd:text-shadow,//文字阴影
         ts:transition,//过渡效果
         tf:transform,//变换
-        fd:flex-direction,//flex方向
+        fd:(display:flex,flex-direction:var(--#{$pre}fd)),//flex方向
         a:animation,//动画效果
         of:object-fit,//适应方式
         v:visibility,//可见设置
@@ -157,6 +157,7 @@ ul,ol,dl{
         gtr:grid-template-rows,//属性规定网格布局中的行数（和高度）
         td:text-decoration,//属性规定添加到文本的修饰，下划线、上划线、删除线等
         op:opacity, //透明度
+        o:overflow,//超出
         pa:(position:absolute,inset:var(--#{$pre}pa)),//absolute的inset
         pf:(position:fixed,inset:var(--#{$pre}pf)),//fixed的inset
         tb:(background:var(--#{$pre}tb),-webkit-background-clip: text,-webkit-text-fill-color: transparent,background-size:cover),//文字背景

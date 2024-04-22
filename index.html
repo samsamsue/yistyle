@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YiStyle-YIUI</title>
     <link rel="stylesheet" href="base.css">
+    <script src="base.js"></script>
+    <script>
+    $ready(()=>lazysrc(document.body))
+    </script>
     <style>
     body{
         padding:0;
@@ -21,35 +25,18 @@
         width:min(1600px,calc(100% - 12rem));
         margin:auto;
     }
+    @media(max-width:1024px){
+        .in{
+            width:min(1600px,calc(100% - 2rem));
+        }
+    }
     </style>
 </head>
 <body>
     
-    <div style="--p:3rem;">
-        <button class="ui-button size-large">Large</button>
-        <button class="ui-button size-default type-success loading">Default</button>
-        <button class="ui-button size-small type-primary loading">Small</button>
-        <button class="ui-button loading" style="--button-size:1.5rem;--button-background:pink;--button-color:red;">Custom</button>
-        <a href="" class="ui-button loading">Link's Button</a>
-    </div>
-
-    <style>
-        .test{
-            box-shadow: 0 0 0 5px #F00,10px 0 0 5px rgb(0, 255, 149),20px 0 0 5px rgb(3, 23, 245),30px 0 0 5px rgb(0, 255, 115);
-            width:0;
-            aspect-ratio: 1;
-            margin:2rem;
-            background-color: #00F;
-        }
-        </style>
-    
-        <div style="--p:2rem;">
-            <div class="test"></div>
-        </div>
-
     <header style="--p:1rem;--sd:var(--shadow);--ps:sticky;top:0;z-index: 9;--b:var(--bg);">
         <div class="in" style="--vg:2rem;--ai:center;">
-            <img class="logo" src="https://jdtek.hk/static/images/logo.svg" alt="">
+            <img class="logo" src="/src/logo.svg" style="--w:10rem;" alt="">
             <div style="--ml:auto;--sj:center;">
                 <ul style="--vg:4rem;">
                     <li><a href="">首页</a></li>
@@ -62,48 +49,59 @@
     </header>
 
 
-    <section style="--py:4rem;">
+    <section style="--py:4rem;--h:80vh;background-color: #000;--ps:relative;">
+        <div style="--ps:absolute;--in:0;--op:0.3;background-attachment: fixed;--bs:cover;" bgmode lazy-src="https://cdn.pixabay.com/photo/2015/12/09/01/02/mandalas-1084082_1280.jpg" ></div>
+        <div class="in" style="--ps:relative;--h:100%;--fd: column;--jc:center;--c:#FFF;--ta:center;">
+            <h1 style="--fs:8vw;--a:zoomIn 2s;--tsb:url(https://cdn.pixabay.com/photo/2015/12/09/01/02/mandalas-1084082_1280.jpg);--tss:1vw;--tsd:0 2rem 2rem rgba(255, 213, 0, 0.8);--hover-tf:translateY(-5px);--hover-tsd:0 2rem 2rem rgba(193, 38, 154, 0.8);">YISTYLE</h1>
+        </div>
+    </section>
+
+    <section style="--py:6rem;">
         <div class="in">
-            <ul style="--cols:3;--for-r:1rem;--for-pd:2rem;--for-b:#EEE;--g:2rem;--for-h:20rem;--for-ts:0.3s;--for-hover-sd:0 1rem 2rem rgba(0,0,0,0.2);--for-active-sd: 0 0;--for-active-ts:none;">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            
+            <h2 style="--fs:2rem;">
+                列表示例
+            </h2>
+            <ul style="--cols:4;--12-cols:3;--10-cols:2;--for-o:hidden;--for-r:1rem;--for-pd:2rem;--for-b:#EEE;--g:2rem;--for-ar:16/9;--for-ts:0.3s;--for-hover-sd:0 1rem 2rem rgba(0,0,0,0.4);--for-active-sd: 0 0;--for-active-ts:none;">
+                <li lazy-src="https://cdn.pixabay.com/photo/2018/06/22/08/24/emotions-3490223_1280.jpg"></li>
+                <li lazy-src="https://cdn.pixabay.com/photo/2023/05/23/07/05/royal-gramma-basslet-8012082_640.jpg"></li>
+                <li lazy-src="https://cdn.pixabay.com/photo/2018/03/01/12/08/gem-3190526_640.jpg"></li>
+                <li lazy-src="https://cdn.pixabay.com/photo/2024/01/27/18/24/squirrel-8536537_640.jpg"></li>
+                <li lazy-src="https://cdn.pixabay.com/photo/2014/09/14/18/04/dandelion-445228_640.jpg"></li>
+                <li lazy-src="https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175_640.jpg"></li>
+                <li lazy-src="https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197_640.jpg"></li>
+                <li lazy-src="https://cdn.pixabay.com/photo/2016/02/10/21/57/heart-1192662_640.jpg"></li>
             </ul>
         </div>
     </section>
 
-    
-    <section style="--py:4rem;">
+
+    <section style="--py:6rem;">
         <div class="in">
-            <h2>法国公司注册优势</h2>
-            <ul style="--cols:6;--for-pd:2rem;--for-b:#EEE;--g:2rem;--for-h:20rem;--for-ts:0.3s;--for-hover-sd:0 1rem 2rem rgba(0,0,0,0.2);--for-active-sd: 0 0;--for-active-ts:none;">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <div style="--fw:bold;--ta:center; border:2px solid #EEE;--p:4rem;--h:40rem;--aj:center;--fd:column;--r:2rem;">
+                <span style="--tsb:url(https://cdn.pixabay.com/photo/2015/12/09/01/02/mandalas-1084082_1280.jpg);--tss:10px;--c:#ffffff;--p:6px;--fs:6rem;">YISTYLE</span><br>
+                <span style="--tb:url(https://cdn.pixabay.com/photo/2015/12/09/01/02/mandalas-1084082_1280.jpg); color:#000;--fs:3rem;">—— 灵活的Css库 ——</span>
+            </div>
         </div>
-
-        
-
-        <div style="--fs:3rem;--fw:bold;--ta:center; background-size: 500%; ">
-            <span style="--tb:linear-gradient(to right,#a4a4a4,rgb(73, 73, 73)); color:#000;  ">文字背景测试</span>
-            <span style="--tsb:#00F;--tss:10px;--c:#FFF;--p:6px;  ">文字描边测试</span>
-        </div>
-
     </section>
 
-
+    <script src="/src/alert.js"></script>
+    <section style="--py:4rem;text-align: center;">
+        <div class="in">
+            <button class="ui-button size-large" onclick="$alert({text:'Large Button',icon:'succeed'})">Large</button>
+            <button class="ui-button size-default type-success loading"  onclick="$alert({text:'Default Button',icon:'succeed'})">Default</button>
+            <button class="ui-button size-small type-primary loading"  onclick="$alert({text:'Small Button',icon:'succeed',mode:'mini',autoClose:true,showClose:true})">Small</button>
+            <button class="ui-button loading" onclick="$alert({text:'Custom Button',icon:'warning'})" style="--button-size:1.5rem;--button-background:rgb(65, 0, 215);--button-color:rgb(255, 191, 0);">Custom</button>
+            <a href="https://google.com" class="ui-button loading">Link Button</a>
+            <div style="--mt:1rem;">
+                点击按钮试试弹出Alert框
+            </div>
+        </div>
+    </section>
     
-
 
     <div style="--h:800px;"></div>
+
 
 </body>
 </html>
