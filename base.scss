@@ -135,6 +135,7 @@ ul,ol,dl{
         aj:(align-items,justify-content),//横纵向居中
         ja:(align-items,justify-content),//横纵向居中
         ai:align-items,
+        ji:justify-items,
         jc:justify-content,
         lines:(display:-webkit-box,-webkit-box-orient:vertical,line-clamp:var(--#{$pre}lines),-webkit-line-clamp:var(--#{$pre}lines),overflow: hidden),//只显示行数
         cols:(display:grid,grid-template-columns: repeat(var(--#{$pre}cols),1fr)),//列数
