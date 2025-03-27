@@ -366,6 +366,18 @@ ul, ol, dl {
   grid-auto-rows: var(--gar);
 }
 
+[style*="--ga:"] {
+  grid-area: var(--ga);
+}
+
+[style*="--gg:"] {
+  grid-gap: var(--gg);
+}
+
+[style*="--gaf:"] {
+  grid-auto-flow: var(--gaf);
+}
+
 [style*="--gis:"] {
   grid-item: var(--gis);
 }
@@ -680,6 +692,18 @@ ul, ol, dl {
 
 [style*="--hover-gar:"]:hover {
   grid-auto-rows: var(--hover-gar);
+}
+
+[style*="--hover-ga:"]:hover {
+  grid-area: var(--hover-ga);
+}
+
+[style*="--hover-gg:"]:hover {
+  grid-gap: var(--hover-gg);
+}
+
+[style*="--hover-gaf:"]:hover {
+  grid-auto-flow: var(--hover-gaf);
 }
 
 [style*="--hover-gis:"]:hover {
@@ -998,6 +1022,18 @@ ul, ol, dl {
   grid-auto-rows: var(--hover-target-gar);
 }
 
+[style*="--hover-target-ga:"]:hover .target {
+  grid-area: var(--hover-target-ga);
+}
+
+[style*="--hover-target-gg:"]:hover .target {
+  grid-gap: var(--hover-target-gg);
+}
+
+[style*="--hover-target-gaf:"]:hover .target {
+  grid-auto-flow: var(--hover-target-gaf);
+}
+
 [style*="--hover-target-gis:"]:hover .target {
   grid-item: var(--hover-target-gis);
 }
@@ -1312,6 +1348,18 @@ ul, ol, dl {
 
 [style*="--focusgar:"] {
   grid-auto-rows: var(--focusgar);
+}
+
+[style*="--focusga:"] {
+  grid-area: var(--focusga);
+}
+
+[style*="--focusgg:"] {
+  grid-gap: var(--focusgg);
+}
+
+[style*="--focusgaf:"] {
+  grid-auto-flow: var(--focusgaf);
 }
 
 [style*="--focusgis:"] {
@@ -1630,6 +1678,18 @@ ul, ol, dl {
   grid-auto-rows: var(--for-gar);
 }
 
+[style*="--for-ga:"] > * {
+  grid-area: var(--for-ga);
+}
+
+[style*="--for-gg:"] > * {
+  grid-gap: var(--for-gg);
+}
+
+[style*="--for-gaf:"] > * {
+  grid-auto-flow: var(--for-gaf);
+}
+
 [style*="--for-gis:"] > * {
   grid-item: var(--for-gis);
 }
@@ -1944,6 +2004,18 @@ ul, ol, dl {
 
 [style*="--for-hover-gar:"] > *:hover {
   grid-auto-rows: var(--for-hover-gar);
+}
+
+[style*="--for-hover-ga:"] > *:hover {
+  grid-area: var(--for-hover-ga);
+}
+
+[style*="--for-hover-gg:"] > *:hover {
+  grid-gap: var(--for-hover-gg);
+}
+
+[style*="--for-hover-gaf:"] > *:hover {
+  grid-auto-flow: var(--for-hover-gaf);
 }
 
 [style*="--for-hover-gis:"] > *:hover {
@@ -2262,6 +2334,18 @@ ul, ol, dl {
   grid-auto-rows: var(--active-gar);
 }
 
+[style*="--active-ga:"]:active {
+  grid-area: var(--active-ga);
+}
+
+[style*="--active-gg:"]:active {
+  grid-gap: var(--active-gg);
+}
+
+[style*="--active-gaf:"]:active {
+  grid-auto-flow: var(--active-gaf);
+}
+
 [style*="--active-gis:"]:active {
   grid-item: var(--active-gis);
 }
@@ -2576,6 +2660,18 @@ ul, ol, dl {
 
 [style*="--for-active-gar:"] > *:active {
   grid-auto-rows: var(--for-active-gar);
+}
+
+[style*="--for-active-ga:"] > *:active {
+  grid-area: var(--for-active-ga);
+}
+
+[style*="--for-active-gg:"] > *:active {
+  grid-gap: var(--for-active-gg);
+}
+
+[style*="--for-active-gaf:"] > *:active {
+  grid-auto-flow: var(--for-active-gaf);
 }
 
 [style*="--for-active-gis:"] > *:active {
@@ -2894,6 +2990,18 @@ ul, ol, dl {
   grid-auto-rows: var(--target-gar);
 }
 
+[style*="--target-ga:"] .target {
+  grid-area: var(--target-ga);
+}
+
+[style*="--target-gg:"] .target {
+  grid-gap: var(--target-gg);
+}
+
+[style*="--target-gaf:"] .target {
+  grid-auto-flow: var(--target-gaf);
+}
+
 [style*="--target-gis:"] .target {
   grid-item: var(--target-gis);
 }
@@ -3210,6 +3318,18 @@ ul, ol, dl {
   grid-auto-rows: var(--for-hover-target-gar);
 }
 
+[style*="--for-hover-target-ga:"] > *:hover .target {
+  grid-area: var(--for-hover-target-ga);
+}
+
+[style*="--for-hover-target-gg:"] > *:hover .target {
+  grid-gap: var(--for-hover-target-gg);
+}
+
+[style*="--for-hover-target-gaf:"] > *:hover .target {
+  grid-auto-flow: var(--for-hover-target-gaf);
+}
+
 [style*="--for-hover-target-gis:"] > *:hover .target {
   grid-item: var(--for-hover-target-gis);
 }
@@ -3463,6 +3583,15 @@ ul, ol, dl {
   [style*="--16-gar:"] {
     grid-auto-rows: var(--16-gar);
   }
+  [style*="--16-ga:"] {
+    grid-area: var(--16-ga);
+  }
+  [style*="--16-gg:"] {
+    grid-gap: var(--16-gg);
+  }
+  [style*="--16-gaf:"] {
+    grid-auto-flow: var(--16-gaf);
+  }
   [style*="--16-gis:"] {
     grid-item: var(--16-gis);
   }
@@ -3705,6 +3834,15 @@ ul, ol, dl {
   }
   [style*="--16-for-gar:"] > * {
     grid-auto-rows: var(--16-for-gar);
+  }
+  [style*="--16-for-ga:"] > * {
+    grid-area: var(--16-for-ga);
+  }
+  [style*="--16-for-gg:"] > * {
+    grid-gap: var(--16-for-gg);
+  }
+  [style*="--16-for-gaf:"] > * {
+    grid-auto-flow: var(--16-for-gaf);
   }
   [style*="--16-for-gis:"] > * {
     grid-item: var(--16-for-gis);
@@ -3951,6 +4089,15 @@ ul, ol, dl {
   [style*="--14-gar:"] {
     grid-auto-rows: var(--14-gar);
   }
+  [style*="--14-ga:"] {
+    grid-area: var(--14-ga);
+  }
+  [style*="--14-gg:"] {
+    grid-gap: var(--14-gg);
+  }
+  [style*="--14-gaf:"] {
+    grid-auto-flow: var(--14-gaf);
+  }
   [style*="--14-gis:"] {
     grid-item: var(--14-gis);
   }
@@ -4193,6 +4340,15 @@ ul, ol, dl {
   }
   [style*="--14-for-gar:"] > * {
     grid-auto-rows: var(--14-for-gar);
+  }
+  [style*="--14-for-ga:"] > * {
+    grid-area: var(--14-for-ga);
+  }
+  [style*="--14-for-gg:"] > * {
+    grid-gap: var(--14-for-gg);
+  }
+  [style*="--14-for-gaf:"] > * {
+    grid-auto-flow: var(--14-for-gaf);
   }
   [style*="--14-for-gis:"] > * {
     grid-item: var(--14-for-gis);
@@ -4442,6 +4598,15 @@ ul, ol, dl {
   [style*="--12-gar:"] {
     grid-auto-rows: var(--12-gar);
   }
+  [style*="--12-ga:"] {
+    grid-area: var(--12-ga);
+  }
+  [style*="--12-gg:"] {
+    grid-gap: var(--12-gg);
+  }
+  [style*="--12-gaf:"] {
+    grid-auto-flow: var(--12-gaf);
+  }
   [style*="--12-gis:"] {
     grid-item: var(--12-gis);
   }
@@ -4684,6 +4849,15 @@ ul, ol, dl {
   }
   [style*="--12-for-gar:"] > * {
     grid-auto-rows: var(--12-for-gar);
+  }
+  [style*="--12-for-ga:"] > * {
+    grid-area: var(--12-for-ga);
+  }
+  [style*="--12-for-gg:"] > * {
+    grid-gap: var(--12-for-gg);
+  }
+  [style*="--12-for-gaf:"] > * {
+    grid-auto-flow: var(--12-for-gaf);
   }
   [style*="--12-for-gis:"] > * {
     grid-item: var(--12-for-gis);
@@ -4933,6 +5107,15 @@ ul, ol, dl {
   [style*="--10-gar:"] {
     grid-auto-rows: var(--10-gar);
   }
+  [style*="--10-ga:"] {
+    grid-area: var(--10-ga);
+  }
+  [style*="--10-gg:"] {
+    grid-gap: var(--10-gg);
+  }
+  [style*="--10-gaf:"] {
+    grid-auto-flow: var(--10-gaf);
+  }
   [style*="--10-gis:"] {
     grid-item: var(--10-gis);
   }
@@ -5175,6 +5358,15 @@ ul, ol, dl {
   }
   [style*="--10-for-gar:"] > * {
     grid-auto-rows: var(--10-for-gar);
+  }
+  [style*="--10-for-ga:"] > * {
+    grid-area: var(--10-for-ga);
+  }
+  [style*="--10-for-gg:"] > * {
+    grid-gap: var(--10-for-gg);
+  }
+  [style*="--10-for-gaf:"] > * {
+    grid-auto-flow: var(--10-for-gaf);
   }
   [style*="--10-for-gis:"] > * {
     grid-item: var(--10-for-gis);
@@ -5421,6 +5613,15 @@ ul, ol, dl {
   [style*="--8-gar:"] {
     grid-auto-rows: var(--8-gar);
   }
+  [style*="--8-ga:"] {
+    grid-area: var(--8-ga);
+  }
+  [style*="--8-gg:"] {
+    grid-gap: var(--8-gg);
+  }
+  [style*="--8-gaf:"] {
+    grid-auto-flow: var(--8-gaf);
+  }
   [style*="--8-gis:"] {
     grid-item: var(--8-gis);
   }
@@ -5663,6 +5864,15 @@ ul, ol, dl {
   }
   [style*="--8-for-gar:"] > * {
     grid-auto-rows: var(--8-for-gar);
+  }
+  [style*="--8-for-ga:"] > * {
+    grid-area: var(--8-for-ga);
+  }
+  [style*="--8-for-gg:"] > * {
+    grid-gap: var(--8-for-gg);
+  }
+  [style*="--8-for-gaf:"] > * {
+    grid-auto-flow: var(--8-for-gaf);
   }
   [style*="--8-for-gis:"] > * {
     grid-item: var(--8-for-gis);
@@ -5909,6 +6119,15 @@ ul, ol, dl {
   [style*="--6-gar:"] {
     grid-auto-rows: var(--6-gar);
   }
+  [style*="--6-ga:"] {
+    grid-area: var(--6-ga);
+  }
+  [style*="--6-gg:"] {
+    grid-gap: var(--6-gg);
+  }
+  [style*="--6-gaf:"] {
+    grid-auto-flow: var(--6-gaf);
+  }
   [style*="--6-gis:"] {
     grid-item: var(--6-gis);
   }
@@ -6151,6 +6370,15 @@ ul, ol, dl {
   }
   [style*="--6-for-gar:"] > * {
     grid-auto-rows: var(--6-for-gar);
+  }
+  [style*="--6-for-ga:"] > * {
+    grid-area: var(--6-for-ga);
+  }
+  [style*="--6-for-gg:"] > * {
+    grid-gap: var(--6-for-gg);
+  }
+  [style*="--6-for-gaf:"] > * {
+    grid-auto-flow: var(--6-for-gaf);
   }
   [style*="--6-for-gis:"] > * {
     grid-item: var(--6-for-gis);
