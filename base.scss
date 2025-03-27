@@ -160,7 +160,7 @@ ul,ol,dl{
         gac:grid-auto-columns,//属性设置网格项的默认宽度
         gar:grid-auto-rows,//属性设置网格项的默认高度
         ga:grid-area,//属性设置网格项的名称
-        gg:grid-gap,//属性设置网格项之间的间距
+        gg:grid-gap,//属性设置网格项之间的间距 
         gaf:grid-auto-flow,//属性设置网格项的排列方式
         gis:grid-item,//属性设置网格项的位置和大小
         td:text-decoration,//属性规定添加到文本的修饰，下划线、上划线、删除线等
@@ -206,6 +206,7 @@ ul,ol,dl{
     @media(max-width:#{$w}px){
         @include all('#{$c}-');
         @include all('#{$c}-for-','>*');
+        @include all('#{$c}-target-',' .target');
 
         html{
             @if $w == 1440 {
