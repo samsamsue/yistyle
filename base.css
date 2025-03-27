@@ -354,6 +354,22 @@ ul, ol, dl {
   grid-template-rows: var(--gtr);
 }
 
+[style*="--gta:"] {
+  grid-template-areas: var(--gta);
+}
+
+[style*="--gac:"] {
+  grid-auto-columns: var(--gac);
+}
+
+[style*="--gar:"] {
+  grid-auto-rows: var(--gar);
+}
+
+[style*="--gis:"] {
+  grid-item: var(--gis);
+}
+
 [style*="--td:"] {
   text-decoration: var(--td);
 }
@@ -652,6 +668,22 @@ ul, ol, dl {
 
 [style*="--hover-gtr:"]:hover {
   grid-template-rows: var(--hover-gtr);
+}
+
+[style*="--hover-gta:"]:hover {
+  grid-template-areas: var(--hover-gta);
+}
+
+[style*="--hover-gac:"]:hover {
+  grid-auto-columns: var(--hover-gac);
+}
+
+[style*="--hover-gar:"]:hover {
+  grid-auto-rows: var(--hover-gar);
+}
+
+[style*="--hover-gis:"]:hover {
+  grid-item: var(--hover-gis);
 }
 
 [style*="--hover-td:"]:hover {
@@ -954,6 +986,22 @@ ul, ol, dl {
   grid-template-rows: var(--hover-target-gtr);
 }
 
+[style*="--hover-target-gta:"]:hover .target {
+  grid-template-areas: var(--hover-target-gta);
+}
+
+[style*="--hover-target-gac:"]:hover .target {
+  grid-auto-columns: var(--hover-target-gac);
+}
+
+[style*="--hover-target-gar:"]:hover .target {
+  grid-auto-rows: var(--hover-target-gar);
+}
+
+[style*="--hover-target-gis:"]:hover .target {
+  grid-item: var(--hover-target-gis);
+}
+
 [style*="--hover-target-td:"]:hover .target {
   text-decoration: var(--hover-target-td);
 }
@@ -1252,6 +1300,22 @@ ul, ol, dl {
 
 [style*="--focusgtr:"] {
   grid-template-rows: var(--focusgtr);
+}
+
+[style*="--focusgta:"] {
+  grid-template-areas: var(--focusgta);
+}
+
+[style*="--focusgac:"] {
+  grid-auto-columns: var(--focusgac);
+}
+
+[style*="--focusgar:"] {
+  grid-auto-rows: var(--focusgar);
+}
+
+[style*="--focusgis:"] {
+  grid-item: var(--focusgis);
 }
 
 [style*="--focustd:"] {
@@ -1554,6 +1618,22 @@ ul, ol, dl {
   grid-template-rows: var(--for-gtr);
 }
 
+[style*="--for-gta:"] > * {
+  grid-template-areas: var(--for-gta);
+}
+
+[style*="--for-gac:"] > * {
+  grid-auto-columns: var(--for-gac);
+}
+
+[style*="--for-gar:"] > * {
+  grid-auto-rows: var(--for-gar);
+}
+
+[style*="--for-gis:"] > * {
+  grid-item: var(--for-gis);
+}
+
 [style*="--for-td:"] > * {
   text-decoration: var(--for-td);
 }
@@ -1852,6 +1932,22 @@ ul, ol, dl {
 
 [style*="--for-hover-gtr:"] > *:hover {
   grid-template-rows: var(--for-hover-gtr);
+}
+
+[style*="--for-hover-gta:"] > *:hover {
+  grid-template-areas: var(--for-hover-gta);
+}
+
+[style*="--for-hover-gac:"] > *:hover {
+  grid-auto-columns: var(--for-hover-gac);
+}
+
+[style*="--for-hover-gar:"] > *:hover {
+  grid-auto-rows: var(--for-hover-gar);
+}
+
+[style*="--for-hover-gis:"] > *:hover {
+  grid-item: var(--for-hover-gis);
 }
 
 [style*="--for-hover-td:"] > *:hover {
@@ -2154,6 +2250,22 @@ ul, ol, dl {
   grid-template-rows: var(--active-gtr);
 }
 
+[style*="--active-gta:"]:active {
+  grid-template-areas: var(--active-gta);
+}
+
+[style*="--active-gac:"]:active {
+  grid-auto-columns: var(--active-gac);
+}
+
+[style*="--active-gar:"]:active {
+  grid-auto-rows: var(--active-gar);
+}
+
+[style*="--active-gis:"]:active {
+  grid-item: var(--active-gis);
+}
+
 [style*="--active-td:"]:active {
   text-decoration: var(--active-td);
 }
@@ -2452,6 +2564,22 @@ ul, ol, dl {
 
 [style*="--for-active-gtr:"] > *:active {
   grid-template-rows: var(--for-active-gtr);
+}
+
+[style*="--for-active-gta:"] > *:active {
+  grid-template-areas: var(--for-active-gta);
+}
+
+[style*="--for-active-gac:"] > *:active {
+  grid-auto-columns: var(--for-active-gac);
+}
+
+[style*="--for-active-gar:"] > *:active {
+  grid-auto-rows: var(--for-active-gar);
+}
+
+[style*="--for-active-gis:"] > *:active {
+  grid-item: var(--for-active-gis);
 }
 
 [style*="--for-active-td:"] > *:active {
@@ -2754,6 +2882,22 @@ ul, ol, dl {
   grid-template-rows: var(--target-gtr);
 }
 
+[style*="--target-gta:"] .target {
+  grid-template-areas: var(--target-gta);
+}
+
+[style*="--target-gac:"] .target {
+  grid-auto-columns: var(--target-gac);
+}
+
+[style*="--target-gar:"] .target {
+  grid-auto-rows: var(--target-gar);
+}
+
+[style*="--target-gis:"] .target {
+  grid-item: var(--target-gis);
+}
+
 [style*="--target-td:"] .target {
   text-decoration: var(--target-td);
 }
@@ -3054,6 +3198,22 @@ ul, ol, dl {
   grid-template-rows: var(--for-hover-target-gtr);
 }
 
+[style*="--for-hover-target-gta:"] > *:hover .target {
+  grid-template-areas: var(--for-hover-target-gta);
+}
+
+[style*="--for-hover-target-gac:"] > *:hover .target {
+  grid-auto-columns: var(--for-hover-target-gac);
+}
+
+[style*="--for-hover-target-gar:"] > *:hover .target {
+  grid-auto-rows: var(--for-hover-target-gar);
+}
+
+[style*="--for-hover-target-gis:"] > *:hover .target {
+  grid-item: var(--for-hover-target-gis);
+}
+
 [style*="--for-hover-target-td:"] > *:hover .target {
   text-decoration: var(--for-hover-target-td);
 }
@@ -3294,6 +3454,18 @@ ul, ol, dl {
   [style*="--16-gtr:"] {
     grid-template-rows: var(--16-gtr);
   }
+  [style*="--16-gta:"] {
+    grid-template-areas: var(--16-gta);
+  }
+  [style*="--16-gac:"] {
+    grid-auto-columns: var(--16-gac);
+  }
+  [style*="--16-gar:"] {
+    grid-auto-rows: var(--16-gar);
+  }
+  [style*="--16-gis:"] {
+    grid-item: var(--16-gis);
+  }
   [style*="--16-td:"] {
     text-decoration: var(--16-td);
   }
@@ -3524,6 +3696,18 @@ ul, ol, dl {
   }
   [style*="--16-for-gtr:"] > * {
     grid-template-rows: var(--16-for-gtr);
+  }
+  [style*="--16-for-gta:"] > * {
+    grid-template-areas: var(--16-for-gta);
+  }
+  [style*="--16-for-gac:"] > * {
+    grid-auto-columns: var(--16-for-gac);
+  }
+  [style*="--16-for-gar:"] > * {
+    grid-auto-rows: var(--16-for-gar);
+  }
+  [style*="--16-for-gis:"] > * {
+    grid-item: var(--16-for-gis);
   }
   [style*="--16-for-td:"] > * {
     text-decoration: var(--16-for-td);
@@ -3758,6 +3942,18 @@ ul, ol, dl {
   [style*="--14-gtr:"] {
     grid-template-rows: var(--14-gtr);
   }
+  [style*="--14-gta:"] {
+    grid-template-areas: var(--14-gta);
+  }
+  [style*="--14-gac:"] {
+    grid-auto-columns: var(--14-gac);
+  }
+  [style*="--14-gar:"] {
+    grid-auto-rows: var(--14-gar);
+  }
+  [style*="--14-gis:"] {
+    grid-item: var(--14-gis);
+  }
   [style*="--14-td:"] {
     text-decoration: var(--14-td);
   }
@@ -3988,6 +4184,18 @@ ul, ol, dl {
   }
   [style*="--14-for-gtr:"] > * {
     grid-template-rows: var(--14-for-gtr);
+  }
+  [style*="--14-for-gta:"] > * {
+    grid-template-areas: var(--14-for-gta);
+  }
+  [style*="--14-for-gac:"] > * {
+    grid-auto-columns: var(--14-for-gac);
+  }
+  [style*="--14-for-gar:"] > * {
+    grid-auto-rows: var(--14-for-gar);
+  }
+  [style*="--14-for-gis:"] > * {
+    grid-item: var(--14-for-gis);
   }
   [style*="--14-for-td:"] > * {
     text-decoration: var(--14-for-td);
@@ -4225,6 +4433,18 @@ ul, ol, dl {
   [style*="--12-gtr:"] {
     grid-template-rows: var(--12-gtr);
   }
+  [style*="--12-gta:"] {
+    grid-template-areas: var(--12-gta);
+  }
+  [style*="--12-gac:"] {
+    grid-auto-columns: var(--12-gac);
+  }
+  [style*="--12-gar:"] {
+    grid-auto-rows: var(--12-gar);
+  }
+  [style*="--12-gis:"] {
+    grid-item: var(--12-gis);
+  }
   [style*="--12-td:"] {
     text-decoration: var(--12-td);
   }
@@ -4455,6 +4675,18 @@ ul, ol, dl {
   }
   [style*="--12-for-gtr:"] > * {
     grid-template-rows: var(--12-for-gtr);
+  }
+  [style*="--12-for-gta:"] > * {
+    grid-template-areas: var(--12-for-gta);
+  }
+  [style*="--12-for-gac:"] > * {
+    grid-auto-columns: var(--12-for-gac);
+  }
+  [style*="--12-for-gar:"] > * {
+    grid-auto-rows: var(--12-for-gar);
+  }
+  [style*="--12-for-gis:"] > * {
+    grid-item: var(--12-for-gis);
   }
   [style*="--12-for-td:"] > * {
     text-decoration: var(--12-for-td);
@@ -4692,6 +4924,18 @@ ul, ol, dl {
   [style*="--10-gtr:"] {
     grid-template-rows: var(--10-gtr);
   }
+  [style*="--10-gta:"] {
+    grid-template-areas: var(--10-gta);
+  }
+  [style*="--10-gac:"] {
+    grid-auto-columns: var(--10-gac);
+  }
+  [style*="--10-gar:"] {
+    grid-auto-rows: var(--10-gar);
+  }
+  [style*="--10-gis:"] {
+    grid-item: var(--10-gis);
+  }
   [style*="--10-td:"] {
     text-decoration: var(--10-td);
   }
@@ -4922,6 +5166,18 @@ ul, ol, dl {
   }
   [style*="--10-for-gtr:"] > * {
     grid-template-rows: var(--10-for-gtr);
+  }
+  [style*="--10-for-gta:"] > * {
+    grid-template-areas: var(--10-for-gta);
+  }
+  [style*="--10-for-gac:"] > * {
+    grid-auto-columns: var(--10-for-gac);
+  }
+  [style*="--10-for-gar:"] > * {
+    grid-auto-rows: var(--10-for-gar);
+  }
+  [style*="--10-for-gis:"] > * {
+    grid-item: var(--10-for-gis);
   }
   [style*="--10-for-td:"] > * {
     text-decoration: var(--10-for-td);
@@ -5156,6 +5412,18 @@ ul, ol, dl {
   [style*="--8-gtr:"] {
     grid-template-rows: var(--8-gtr);
   }
+  [style*="--8-gta:"] {
+    grid-template-areas: var(--8-gta);
+  }
+  [style*="--8-gac:"] {
+    grid-auto-columns: var(--8-gac);
+  }
+  [style*="--8-gar:"] {
+    grid-auto-rows: var(--8-gar);
+  }
+  [style*="--8-gis:"] {
+    grid-item: var(--8-gis);
+  }
   [style*="--8-td:"] {
     text-decoration: var(--8-td);
   }
@@ -5386,6 +5654,18 @@ ul, ol, dl {
   }
   [style*="--8-for-gtr:"] > * {
     grid-template-rows: var(--8-for-gtr);
+  }
+  [style*="--8-for-gta:"] > * {
+    grid-template-areas: var(--8-for-gta);
+  }
+  [style*="--8-for-gac:"] > * {
+    grid-auto-columns: var(--8-for-gac);
+  }
+  [style*="--8-for-gar:"] > * {
+    grid-auto-rows: var(--8-for-gar);
+  }
+  [style*="--8-for-gis:"] > * {
+    grid-item: var(--8-for-gis);
   }
   [style*="--8-for-td:"] > * {
     text-decoration: var(--8-for-td);
@@ -5620,6 +5900,18 @@ ul, ol, dl {
   [style*="--6-gtr:"] {
     grid-template-rows: var(--6-gtr);
   }
+  [style*="--6-gta:"] {
+    grid-template-areas: var(--6-gta);
+  }
+  [style*="--6-gac:"] {
+    grid-auto-columns: var(--6-gac);
+  }
+  [style*="--6-gar:"] {
+    grid-auto-rows: var(--6-gar);
+  }
+  [style*="--6-gis:"] {
+    grid-item: var(--6-gis);
+  }
   [style*="--6-td:"] {
     text-decoration: var(--6-td);
   }
@@ -5850,6 +6142,18 @@ ul, ol, dl {
   }
   [style*="--6-for-gtr:"] > * {
     grid-template-rows: var(--6-for-gtr);
+  }
+  [style*="--6-for-gta:"] > * {
+    grid-template-areas: var(--6-for-gta);
+  }
+  [style*="--6-for-gac:"] > * {
+    grid-auto-columns: var(--6-for-gac);
+  }
+  [style*="--6-for-gar:"] > * {
+    grid-auto-rows: var(--6-for-gar);
+  }
+  [style*="--6-for-gis:"] > * {
+    grid-item: var(--6-for-gis);
   }
   [style*="--6-for-td:"] > * {
     text-decoration: var(--6-for-td);
