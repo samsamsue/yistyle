@@ -378,8 +378,8 @@ ul, ol, dl {
   grid-auto-flow: var(--gaf);
 }
 
-[style*="--gis:"] {
-  grid-item: var(--gis);
+[style*="--gi:"] {
+  grid-item: var(--gi);
 }
 
 [style*="--td:"] {
@@ -706,8 +706,8 @@ ul, ol, dl {
   grid-auto-flow: var(--hover-gaf);
 }
 
-[style*="--hover-gis:"]:hover {
-  grid-item: var(--hover-gis);
+[style*="--hover-gi:"]:hover {
+  grid-item: var(--hover-gi);
 }
 
 [style*="--hover-td:"]:hover {
@@ -1034,8 +1034,8 @@ ul, ol, dl {
   grid-auto-flow: var(--hover-target-gaf);
 }
 
-[style*="--hover-target-gis:"]:hover .target {
-  grid-item: var(--hover-target-gis);
+[style*="--hover-target-gi:"]:hover .target {
+  grid-item: var(--hover-target-gi);
 }
 
 [style*="--hover-target-td:"]:hover .target {
@@ -1362,8 +1362,8 @@ ul, ol, dl {
   grid-auto-flow: var(--focusgaf);
 }
 
-[style*="--focusgis:"] {
-  grid-item: var(--focusgis);
+[style*="--focusgi:"] {
+  grid-item: var(--focusgi);
 }
 
 [style*="--focustd:"] {
@@ -1690,8 +1690,8 @@ ul, ol, dl {
   grid-auto-flow: var(--for-gaf);
 }
 
-[style*="--for-gis:"] > * {
-  grid-item: var(--for-gis);
+[style*="--for-gi:"] > * {
+  grid-item: var(--for-gi);
 }
 
 [style*="--for-td:"] > * {
@@ -2018,8 +2018,8 @@ ul, ol, dl {
   grid-auto-flow: var(--for-hover-gaf);
 }
 
-[style*="--for-hover-gis:"] > *:hover {
-  grid-item: var(--for-hover-gis);
+[style*="--for-hover-gi:"] > *:hover {
+  grid-item: var(--for-hover-gi);
 }
 
 [style*="--for-hover-td:"] > *:hover {
@@ -2346,8 +2346,8 @@ ul, ol, dl {
   grid-auto-flow: var(--active-gaf);
 }
 
-[style*="--active-gis:"]:active {
-  grid-item: var(--active-gis);
+[style*="--active-gi:"]:active {
+  grid-item: var(--active-gi);
 }
 
 [style*="--active-td:"]:active {
@@ -2674,8 +2674,8 @@ ul, ol, dl {
   grid-auto-flow: var(--for-active-gaf);
 }
 
-[style*="--for-active-gis:"] > *:active {
-  grid-item: var(--for-active-gis);
+[style*="--for-active-gi:"] > *:active {
+  grid-item: var(--for-active-gi);
 }
 
 [style*="--for-active-td:"] > *:active {
@@ -3002,8 +3002,8 @@ ul, ol, dl {
   grid-auto-flow: var(--target-gaf);
 }
 
-[style*="--target-gis:"] .target {
-  grid-item: var(--target-gis);
+[style*="--target-gi:"] .target {
+  grid-item: var(--target-gi);
 }
 
 [style*="--target-td:"] .target {
@@ -3330,8 +3330,8 @@ ul, ol, dl {
   grid-auto-flow: var(--for-hover-target-gaf);
 }
 
-[style*="--for-hover-target-gis:"] > *:hover .target {
-  grid-item: var(--for-hover-target-gis);
+[style*="--for-hover-target-gi:"] > *:hover .target {
+  grid-item: var(--for-hover-target-gi);
 }
 
 [style*="--for-hover-target-td:"] > *:hover .target {
@@ -3592,8 +3592,8 @@ ul, ol, dl {
   [style*="--16-gaf:"] {
     grid-auto-flow: var(--16-gaf);
   }
-  [style*="--16-gis:"] {
-    grid-item: var(--16-gis);
+  [style*="--16-gi:"] {
+    grid-item: var(--16-gi);
   }
   [style*="--16-td:"] {
     text-decoration: var(--16-td);
@@ -3844,8 +3844,8 @@ ul, ol, dl {
   [style*="--16-for-gaf:"] > * {
     grid-auto-flow: var(--16-for-gaf);
   }
-  [style*="--16-for-gis:"] > * {
-    grid-item: var(--16-for-gis);
+  [style*="--16-for-gi:"] > * {
+    grid-item: var(--16-for-gi);
   }
   [style*="--16-for-td:"] > * {
     text-decoration: var(--16-for-td);
@@ -4096,8 +4096,8 @@ ul, ol, dl {
   [style*="--16-target-gaf:"] .target {
     grid-auto-flow: var(--16-target-gaf);
   }
-  [style*="--16-target-gis:"] .target {
-    grid-item: var(--16-target-gis);
+  [style*="--16-target-gi:"] .target {
+    grid-item: var(--16-target-gi);
   }
   [style*="--16-target-td:"] .target {
     text-decoration: var(--16-target-td);
@@ -4350,8 +4350,8 @@ ul, ol, dl {
   [style*="--14-gaf:"] {
     grid-auto-flow: var(--14-gaf);
   }
-  [style*="--14-gis:"] {
-    grid-item: var(--14-gis);
+  [style*="--14-gi:"] {
+    grid-item: var(--14-gi);
   }
   [style*="--14-td:"] {
     text-decoration: var(--14-td);
@@ -4602,8 +4602,8 @@ ul, ol, dl {
   [style*="--14-for-gaf:"] > * {
     grid-auto-flow: var(--14-for-gaf);
   }
-  [style*="--14-for-gis:"] > * {
-    grid-item: var(--14-for-gis);
+  [style*="--14-for-gi:"] > * {
+    grid-item: var(--14-for-gi);
   }
   [style*="--14-for-td:"] > * {
     text-decoration: var(--14-for-td);
@@ -4854,8 +4854,8 @@ ul, ol, dl {
   [style*="--14-target-gaf:"] .target {
     grid-auto-flow: var(--14-target-gaf);
   }
-  [style*="--14-target-gis:"] .target {
-    grid-item: var(--14-target-gis);
+  [style*="--14-target-gi:"] .target {
+    grid-item: var(--14-target-gi);
   }
   [style*="--14-target-td:"] .target {
     text-decoration: var(--14-target-td);
@@ -5111,8 +5111,8 @@ ul, ol, dl {
   [style*="--12-gaf:"] {
     grid-auto-flow: var(--12-gaf);
   }
-  [style*="--12-gis:"] {
-    grid-item: var(--12-gis);
+  [style*="--12-gi:"] {
+    grid-item: var(--12-gi);
   }
   [style*="--12-td:"] {
     text-decoration: var(--12-td);
@@ -5363,8 +5363,8 @@ ul, ol, dl {
   [style*="--12-for-gaf:"] > * {
     grid-auto-flow: var(--12-for-gaf);
   }
-  [style*="--12-for-gis:"] > * {
-    grid-item: var(--12-for-gis);
+  [style*="--12-for-gi:"] > * {
+    grid-item: var(--12-for-gi);
   }
   [style*="--12-for-td:"] > * {
     text-decoration: var(--12-for-td);
@@ -5615,8 +5615,8 @@ ul, ol, dl {
   [style*="--12-target-gaf:"] .target {
     grid-auto-flow: var(--12-target-gaf);
   }
-  [style*="--12-target-gis:"] .target {
-    grid-item: var(--12-target-gis);
+  [style*="--12-target-gi:"] .target {
+    grid-item: var(--12-target-gi);
   }
   [style*="--12-target-td:"] .target {
     text-decoration: var(--12-target-td);
@@ -5872,8 +5872,8 @@ ul, ol, dl {
   [style*="--10-gaf:"] {
     grid-auto-flow: var(--10-gaf);
   }
-  [style*="--10-gis:"] {
-    grid-item: var(--10-gis);
+  [style*="--10-gi:"] {
+    grid-item: var(--10-gi);
   }
   [style*="--10-td:"] {
     text-decoration: var(--10-td);
@@ -6124,8 +6124,8 @@ ul, ol, dl {
   [style*="--10-for-gaf:"] > * {
     grid-auto-flow: var(--10-for-gaf);
   }
-  [style*="--10-for-gis:"] > * {
-    grid-item: var(--10-for-gis);
+  [style*="--10-for-gi:"] > * {
+    grid-item: var(--10-for-gi);
   }
   [style*="--10-for-td:"] > * {
     text-decoration: var(--10-for-td);
@@ -6376,8 +6376,8 @@ ul, ol, dl {
   [style*="--10-target-gaf:"] .target {
     grid-auto-flow: var(--10-target-gaf);
   }
-  [style*="--10-target-gis:"] .target {
-    grid-item: var(--10-target-gis);
+  [style*="--10-target-gi:"] .target {
+    grid-item: var(--10-target-gi);
   }
   [style*="--10-target-td:"] .target {
     text-decoration: var(--10-target-td);
@@ -6630,8 +6630,8 @@ ul, ol, dl {
   [style*="--8-gaf:"] {
     grid-auto-flow: var(--8-gaf);
   }
-  [style*="--8-gis:"] {
-    grid-item: var(--8-gis);
+  [style*="--8-gi:"] {
+    grid-item: var(--8-gi);
   }
   [style*="--8-td:"] {
     text-decoration: var(--8-td);
@@ -6882,8 +6882,8 @@ ul, ol, dl {
   [style*="--8-for-gaf:"] > * {
     grid-auto-flow: var(--8-for-gaf);
   }
-  [style*="--8-for-gis:"] > * {
-    grid-item: var(--8-for-gis);
+  [style*="--8-for-gi:"] > * {
+    grid-item: var(--8-for-gi);
   }
   [style*="--8-for-td:"] > * {
     text-decoration: var(--8-for-td);
@@ -7134,8 +7134,8 @@ ul, ol, dl {
   [style*="--8-target-gaf:"] .target {
     grid-auto-flow: var(--8-target-gaf);
   }
-  [style*="--8-target-gis:"] .target {
-    grid-item: var(--8-target-gis);
+  [style*="--8-target-gi:"] .target {
+    grid-item: var(--8-target-gi);
   }
   [style*="--8-target-td:"] .target {
     text-decoration: var(--8-target-td);
@@ -7388,8 +7388,8 @@ ul, ol, dl {
   [style*="--6-gaf:"] {
     grid-auto-flow: var(--6-gaf);
   }
-  [style*="--6-gis:"] {
-    grid-item: var(--6-gis);
+  [style*="--6-gi:"] {
+    grid-item: var(--6-gi);
   }
   [style*="--6-td:"] {
     text-decoration: var(--6-td);
@@ -7640,8 +7640,8 @@ ul, ol, dl {
   [style*="--6-for-gaf:"] > * {
     grid-auto-flow: var(--6-for-gaf);
   }
-  [style*="--6-for-gis:"] > * {
-    grid-item: var(--6-for-gis);
+  [style*="--6-for-gi:"] > * {
+    grid-item: var(--6-for-gi);
   }
   [style*="--6-for-td:"] > * {
     text-decoration: var(--6-for-td);
@@ -7892,8 +7892,8 @@ ul, ol, dl {
   [style*="--6-target-gaf:"] .target {
     grid-auto-flow: var(--6-target-gaf);
   }
-  [style*="--6-target-gis:"] .target {
-    grid-item: var(--6-target-gis);
+  [style*="--6-target-gi:"] .target {
+    grid-item: var(--6-target-gi);
   }
   [style*="--6-target-td:"] .target {
     text-decoration: var(--6-target-td);
