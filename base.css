@@ -329,12 +329,12 @@ ul, ol, dl {
   visibility: var(--v);
 }
 
-[style*="--sa:"] {
-  align-self: var(--sa);
+[style*="--as:"] {
+  align-self: var(--as);
 }
 
-[style*="--sj:"] {
-  justify-self: var(--sj);
+[style*="--js:"] {
+  justify-self: var(--js);
 }
 
 [style*="--filter:"] {
@@ -673,12 +673,12 @@ ul, ol, dl {
   visibility: var(--hover-v);
 }
 
-[style*="--hover-sa:"]:hover {
-  align-self: var(--hover-sa);
+[style*="--hover-as:"]:hover {
+  align-self: var(--hover-as);
 }
 
-[style*="--hover-sj:"]:hover {
-  justify-self: var(--hover-sj);
+[style*="--hover-js:"]:hover {
+  justify-self: var(--hover-js);
 }
 
 [style*="--hover-filter:"]:hover {
@@ -1017,12 +1017,12 @@ ul, ol, dl {
   visibility: var(--hover-target-v);
 }
 
-[style*="--hover-target-sa:"]:hover .target {
-  align-self: var(--hover-target-sa);
+[style*="--hover-target-as:"]:hover .target {
+  align-self: var(--hover-target-as);
 }
 
-[style*="--hover-target-sj:"]:hover .target {
-  justify-self: var(--hover-target-sj);
+[style*="--hover-target-js:"]:hover .target {
+  justify-self: var(--hover-target-js);
 }
 
 [style*="--hover-target-filter:"]:hover .target {
@@ -1361,12 +1361,12 @@ ul, ol, dl {
   visibility: var(--focusv);
 }
 
-[style*="--focussa:"] {
-  align-self: var(--focussa);
+[style*="--focusas:"] {
+  align-self: var(--focusas);
 }
 
-[style*="--focussj:"] {
-  justify-self: var(--focussj);
+[style*="--focusjs:"] {
+  justify-self: var(--focusjs);
 }
 
 [style*="--focusfilter:"] {
@@ -1705,12 +1705,12 @@ ul, ol, dl {
   visibility: var(--for-v);
 }
 
-[style*="--for-sa:"] > * {
-  align-self: var(--for-sa);
+[style*="--for-as:"] > * {
+  align-self: var(--for-as);
 }
 
-[style*="--for-sj:"] > * {
-  justify-self: var(--for-sj);
+[style*="--for-js:"] > * {
+  justify-self: var(--for-js);
 }
 
 [style*="--for-filter:"] > * {
@@ -2049,12 +2049,12 @@ ul, ol, dl {
   visibility: var(--for-hover-v);
 }
 
-[style*="--for-hover-sa:"] > *:hover {
-  align-self: var(--for-hover-sa);
+[style*="--for-hover-as:"] > *:hover {
+  align-self: var(--for-hover-as);
 }
 
-[style*="--for-hover-sj:"] > *:hover {
-  justify-self: var(--for-hover-sj);
+[style*="--for-hover-js:"] > *:hover {
+  justify-self: var(--for-hover-js);
 }
 
 [style*="--for-hover-filter:"] > *:hover {
@@ -2393,12 +2393,12 @@ ul, ol, dl {
   visibility: var(--active-v);
 }
 
-[style*="--active-sa:"]:active {
-  align-self: var(--active-sa);
+[style*="--active-as:"]:active {
+  align-self: var(--active-as);
 }
 
-[style*="--active-sj:"]:active {
-  justify-self: var(--active-sj);
+[style*="--active-js:"]:active {
+  justify-self: var(--active-js);
 }
 
 [style*="--active-filter:"]:active {
@@ -2737,12 +2737,12 @@ ul, ol, dl {
   visibility: var(--for-active-v);
 }
 
-[style*="--for-active-sa:"] > *:active {
-  align-self: var(--for-active-sa);
+[style*="--for-active-as:"] > *:active {
+  align-self: var(--for-active-as);
 }
 
-[style*="--for-active-sj:"] > *:active {
-  justify-self: var(--for-active-sj);
+[style*="--for-active-js:"] > *:active {
+  justify-self: var(--for-active-js);
 }
 
 [style*="--for-active-filter:"] > *:active {
@@ -3081,12 +3081,12 @@ ul, ol, dl {
   visibility: var(--target-v);
 }
 
-[style*="--target-sa:"] .target {
-  align-self: var(--target-sa);
+[style*="--target-as:"] .target {
+  align-self: var(--target-as);
 }
 
-[style*="--target-sj:"] .target {
-  justify-self: var(--target-sj);
+[style*="--target-js:"] .target {
+  justify-self: var(--target-js);
 }
 
 [style*="--target-filter:"] .target {
@@ -3425,12 +3425,12 @@ ul, ol, dl {
   visibility: var(--for-hover-target-v);
 }
 
-[style*="--for-hover-target-sa:"] > *:hover .target {
-  align-self: var(--for-hover-target-sa);
+[style*="--for-hover-target-as:"] > *:hover .target {
+  align-self: var(--for-hover-target-as);
 }
 
-[style*="--for-hover-target-sj:"] > *:hover .target {
-  justify-self: var(--for-hover-target-sj);
+[style*="--for-hover-target-js:"] > *:hover .target {
+  justify-self: var(--for-hover-target-js);
 }
 
 [style*="--for-hover-target-filter:"] > *:hover .target {
@@ -3714,11 +3714,11 @@ ul, ol, dl {
   [style*="--16-v:"] {
     visibility: var(--16-v);
   }
-  [style*="--16-sa:"] {
-    align-self: var(--16-sa);
+  [style*="--16-as:"] {
+    align-self: var(--16-as);
   }
-  [style*="--16-sj:"] {
-    justify-self: var(--16-sj);
+  [style*="--16-js:"] {
+    justify-self: var(--16-js);
   }
   [style*="--16-filter:"] {
     filter: var(--16-filter);
@@ -3978,11 +3978,11 @@ ul, ol, dl {
   [style*="--16-for-v:"] > * {
     visibility: var(--16-for-v);
   }
-  [style*="--16-for-sa:"] > * {
-    align-self: var(--16-for-sa);
+  [style*="--16-for-as:"] > * {
+    align-self: var(--16-for-as);
   }
-  [style*="--16-for-sj:"] > * {
-    justify-self: var(--16-for-sj);
+  [style*="--16-for-js:"] > * {
+    justify-self: var(--16-for-js);
   }
   [style*="--16-for-filter:"] > * {
     filter: var(--16-for-filter);
@@ -4242,11 +4242,11 @@ ul, ol, dl {
   [style*="--16-target-v:"] .target {
     visibility: var(--16-target-v);
   }
-  [style*="--16-target-sa:"] .target {
-    align-self: var(--16-target-sa);
+  [style*="--16-target-as:"] .target {
+    align-self: var(--16-target-as);
   }
-  [style*="--16-target-sj:"] .target {
-    justify-self: var(--16-target-sj);
+  [style*="--16-target-js:"] .target {
+    justify-self: var(--16-target-js);
   }
   [style*="--16-target-filter:"] .target {
     filter: var(--16-target-filter);
@@ -4508,11 +4508,11 @@ ul, ol, dl {
   [style*="--14-v:"] {
     visibility: var(--14-v);
   }
-  [style*="--14-sa:"] {
-    align-self: var(--14-sa);
+  [style*="--14-as:"] {
+    align-self: var(--14-as);
   }
-  [style*="--14-sj:"] {
-    justify-self: var(--14-sj);
+  [style*="--14-js:"] {
+    justify-self: var(--14-js);
   }
   [style*="--14-filter:"] {
     filter: var(--14-filter);
@@ -4772,11 +4772,11 @@ ul, ol, dl {
   [style*="--14-for-v:"] > * {
     visibility: var(--14-for-v);
   }
-  [style*="--14-for-sa:"] > * {
-    align-self: var(--14-for-sa);
+  [style*="--14-for-as:"] > * {
+    align-self: var(--14-for-as);
   }
-  [style*="--14-for-sj:"] > * {
-    justify-self: var(--14-for-sj);
+  [style*="--14-for-js:"] > * {
+    justify-self: var(--14-for-js);
   }
   [style*="--14-for-filter:"] > * {
     filter: var(--14-for-filter);
@@ -5036,11 +5036,11 @@ ul, ol, dl {
   [style*="--14-target-v:"] .target {
     visibility: var(--14-target-v);
   }
-  [style*="--14-target-sa:"] .target {
-    align-self: var(--14-target-sa);
+  [style*="--14-target-as:"] .target {
+    align-self: var(--14-target-as);
   }
-  [style*="--14-target-sj:"] .target {
-    justify-self: var(--14-target-sj);
+  [style*="--14-target-js:"] .target {
+    justify-self: var(--14-target-js);
   }
   [style*="--14-target-filter:"] .target {
     filter: var(--14-target-filter);
@@ -5305,11 +5305,11 @@ ul, ol, dl {
   [style*="--12-v:"] {
     visibility: var(--12-v);
   }
-  [style*="--12-sa:"] {
-    align-self: var(--12-sa);
+  [style*="--12-as:"] {
+    align-self: var(--12-as);
   }
-  [style*="--12-sj:"] {
-    justify-self: var(--12-sj);
+  [style*="--12-js:"] {
+    justify-self: var(--12-js);
   }
   [style*="--12-filter:"] {
     filter: var(--12-filter);
@@ -5569,11 +5569,11 @@ ul, ol, dl {
   [style*="--12-for-v:"] > * {
     visibility: var(--12-for-v);
   }
-  [style*="--12-for-sa:"] > * {
-    align-self: var(--12-for-sa);
+  [style*="--12-for-as:"] > * {
+    align-self: var(--12-for-as);
   }
-  [style*="--12-for-sj:"] > * {
-    justify-self: var(--12-for-sj);
+  [style*="--12-for-js:"] > * {
+    justify-self: var(--12-for-js);
   }
   [style*="--12-for-filter:"] > * {
     filter: var(--12-for-filter);
@@ -5833,11 +5833,11 @@ ul, ol, dl {
   [style*="--12-target-v:"] .target {
     visibility: var(--12-target-v);
   }
-  [style*="--12-target-sa:"] .target {
-    align-self: var(--12-target-sa);
+  [style*="--12-target-as:"] .target {
+    align-self: var(--12-target-as);
   }
-  [style*="--12-target-sj:"] .target {
-    justify-self: var(--12-target-sj);
+  [style*="--12-target-js:"] .target {
+    justify-self: var(--12-target-js);
   }
   [style*="--12-target-filter:"] .target {
     filter: var(--12-target-filter);
@@ -6102,11 +6102,11 @@ ul, ol, dl {
   [style*="--10-v:"] {
     visibility: var(--10-v);
   }
-  [style*="--10-sa:"] {
-    align-self: var(--10-sa);
+  [style*="--10-as:"] {
+    align-self: var(--10-as);
   }
-  [style*="--10-sj:"] {
-    justify-self: var(--10-sj);
+  [style*="--10-js:"] {
+    justify-self: var(--10-js);
   }
   [style*="--10-filter:"] {
     filter: var(--10-filter);
@@ -6366,11 +6366,11 @@ ul, ol, dl {
   [style*="--10-for-v:"] > * {
     visibility: var(--10-for-v);
   }
-  [style*="--10-for-sa:"] > * {
-    align-self: var(--10-for-sa);
+  [style*="--10-for-as:"] > * {
+    align-self: var(--10-for-as);
   }
-  [style*="--10-for-sj:"] > * {
-    justify-self: var(--10-for-sj);
+  [style*="--10-for-js:"] > * {
+    justify-self: var(--10-for-js);
   }
   [style*="--10-for-filter:"] > * {
     filter: var(--10-for-filter);
@@ -6630,11 +6630,11 @@ ul, ol, dl {
   [style*="--10-target-v:"] .target {
     visibility: var(--10-target-v);
   }
-  [style*="--10-target-sa:"] .target {
-    align-self: var(--10-target-sa);
+  [style*="--10-target-as:"] .target {
+    align-self: var(--10-target-as);
   }
-  [style*="--10-target-sj:"] .target {
-    justify-self: var(--10-target-sj);
+  [style*="--10-target-js:"] .target {
+    justify-self: var(--10-target-js);
   }
   [style*="--10-target-filter:"] .target {
     filter: var(--10-target-filter);
@@ -6896,11 +6896,11 @@ ul, ol, dl {
   [style*="--8-v:"] {
     visibility: var(--8-v);
   }
-  [style*="--8-sa:"] {
-    align-self: var(--8-sa);
+  [style*="--8-as:"] {
+    align-self: var(--8-as);
   }
-  [style*="--8-sj:"] {
-    justify-self: var(--8-sj);
+  [style*="--8-js:"] {
+    justify-self: var(--8-js);
   }
   [style*="--8-filter:"] {
     filter: var(--8-filter);
@@ -7160,11 +7160,11 @@ ul, ol, dl {
   [style*="--8-for-v:"] > * {
     visibility: var(--8-for-v);
   }
-  [style*="--8-for-sa:"] > * {
-    align-self: var(--8-for-sa);
+  [style*="--8-for-as:"] > * {
+    align-self: var(--8-for-as);
   }
-  [style*="--8-for-sj:"] > * {
-    justify-self: var(--8-for-sj);
+  [style*="--8-for-js:"] > * {
+    justify-self: var(--8-for-js);
   }
   [style*="--8-for-filter:"] > * {
     filter: var(--8-for-filter);
@@ -7424,11 +7424,11 @@ ul, ol, dl {
   [style*="--8-target-v:"] .target {
     visibility: var(--8-target-v);
   }
-  [style*="--8-target-sa:"] .target {
-    align-self: var(--8-target-sa);
+  [style*="--8-target-as:"] .target {
+    align-self: var(--8-target-as);
   }
-  [style*="--8-target-sj:"] .target {
-    justify-self: var(--8-target-sj);
+  [style*="--8-target-js:"] .target {
+    justify-self: var(--8-target-js);
   }
   [style*="--8-target-filter:"] .target {
     filter: var(--8-target-filter);
@@ -7690,11 +7690,11 @@ ul, ol, dl {
   [style*="--6-v:"] {
     visibility: var(--6-v);
   }
-  [style*="--6-sa:"] {
-    align-self: var(--6-sa);
+  [style*="--6-as:"] {
+    align-self: var(--6-as);
   }
-  [style*="--6-sj:"] {
-    justify-self: var(--6-sj);
+  [style*="--6-js:"] {
+    justify-self: var(--6-js);
   }
   [style*="--6-filter:"] {
     filter: var(--6-filter);
@@ -7954,11 +7954,11 @@ ul, ol, dl {
   [style*="--6-for-v:"] > * {
     visibility: var(--6-for-v);
   }
-  [style*="--6-for-sa:"] > * {
-    align-self: var(--6-for-sa);
+  [style*="--6-for-as:"] > * {
+    align-self: var(--6-for-as);
   }
-  [style*="--6-for-sj:"] > * {
-    justify-self: var(--6-for-sj);
+  [style*="--6-for-js:"] > * {
+    justify-self: var(--6-for-js);
   }
   [style*="--6-for-filter:"] > * {
     filter: var(--6-for-filter);
@@ -8218,11 +8218,11 @@ ul, ol, dl {
   [style*="--6-target-v:"] .target {
     visibility: var(--6-target-v);
   }
-  [style*="--6-target-sa:"] .target {
-    align-self: var(--6-target-sa);
+  [style*="--6-target-as:"] .target {
+    align-self: var(--6-target-as);
   }
-  [style*="--6-target-sj:"] .target {
-    justify-self: var(--6-target-sj);
+  [style*="--6-target-js:"] .target {
+    justify-self: var(--6-target-js);
   }
   [style*="--6-target-filter:"] .target {
     filter: var(--6-target-filter);
