@@ -196,7 +196,7 @@ ul,ol,dl{
 @include all('');
 @include all('hover-',':hover');
 @include all('hover-target-',':hover .target');
-@include all('focus');
+@include all('focus-');
 @include all('for-','>*');
 @include all('for-hover-','>*:hover');
 @include all('active-',':active');
